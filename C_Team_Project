@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+
+
+void printOrder(char *firstName, char *secondName, int *firstAge, int *secondAge){
+    if (firstAge > secondAge){
+        printf("%s\n", secondName);
+        printf("%s\n", firstName);
+    } else {
+        printf("%s\n", firstName);
+        printf("%s\n", secondName);
+    }
+}
+
+void printOrder(char*, char*, int*, int*);
+
+int main() {
+    char firstName[] = "Tassos Tsevas";
+    int firstAge = 20;
+    char secondName[] = "George Sanaidis";
+    int secondAge = 23;
+    printOrder(firstName, secondName, firstAge, secondAge);
+    return 0;
+}
