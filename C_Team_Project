@@ -2,7 +2,7 @@
 
 
 
-void printOrder(char *firstName, char *secondName, int *firstAge, int *secondAge){
+void printOrder(char firstName[], char secondName[], int firstAge, int secondAge){
     if (firstAge > secondAge){
         printf("%s\n", secondName);
         printf("%s\n", firstName);
@@ -12,7 +12,7 @@ void printOrder(char *firstName, char *secondName, int *firstAge, int *secondAge
     }
 }
 
-void printOrder(char*, char*, int*, int*);
+void printOrder(char[], char[], int, int);
 
 int main() {
     char firstName[] = "Tassos Tsevas";
