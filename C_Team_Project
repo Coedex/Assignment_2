@@ -1,24 +1,31 @@
-#include <stdio.h>
+#include <stdio.h> 
+//This is George's code
 
 
+//Function declaration
+void PrintInOrder(char[], char[], int[], int[]); //Pass the addresses of the variables in order to save space
 
-void printOrder(char *firstName, char *secondName, int *firstAge, int *secondAge){
-    if (firstAge > secondAge){
-        printf("%s\n", secondName);
-        printf("%s\n", firstName);
-    } else {
-        printf("%s\n", firstName);
-        printf("%s\n", secondName);
-    }
-}
+int main(){
 
-void printOrder(char*, char*, int*, int*);
-
-int main() {
-    char firstName[] = "Tassos Tsevas";
-    int firstAge = 20;
-    char secondName[] = "George Sanaidis";
-    int secondAge = 23;
-    printOrder(firstName, secondName, firstAge, secondAge);
+    //Variable definitions 
+    char memberOneName[] = "Tasos Tsevas";
+    int memeberAgeOne = 20;
+    char memberTwoName[] = "George Sanaidis";
     return 0;
+
 }
+
+//End of main function;
+
+void PrintInOrder(char memberOneName[], char memeberTwoName[], int memberOneAge[], int memberTwoAge[]){
+    
+    if(*memberOneAge < *memberTwoAge){
+        printf("%s\n", memberOneName);
+        printf("%s\n", memberTwoName);
+        
+    }
+    else{
+        printf("%s\n", memebrTwoName);
+        printf("%s\n", memberOneName);
+    }
+//End of PrintInorderFunction
